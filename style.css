@@ -38,6 +38,7 @@ html {
 }
 section {
     border-radius: 25px;
+    margin-top: 10px;
 }
 .left {
     float: left;
@@ -57,4 +58,7 @@ section {
 }
 div {
     margin: 3px;
+}
+div + div {
+    margin-top: 10px;
 }
