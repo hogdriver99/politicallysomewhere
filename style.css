@@ -42,10 +42,19 @@ section {
 .left {
     float: left;
     clear: left;
-    width: 50%;
+    width: 49%;
+    height: auto;
+    padding: 3px;
+    padding-bottom: 3px;
 }
 .right {
     float: right;
     clear: right;
-    width: 50%;
+    width: 49%;
+    height: auto;
+    padding: 3px;
+    padding-bottom: 3px;
+}
+div {
+    margin: 3px;
 }
