@@ -39,3 +39,13 @@ html {
 section {
     border-radius: 25px;
 }
+.left {
+    float: left;
+    clear: left;
+    width: 50%;
+}
+.right {
+    float: right;
+    clear: right;
+    width: 50%;
+}
