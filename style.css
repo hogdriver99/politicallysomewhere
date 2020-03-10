@@ -32,3 +32,7 @@ html {
     align-items: center;
     background-color: #E4EAE9;
 }
+.side-fill {
+    width: 33%;
+    margin: auto;
+}
