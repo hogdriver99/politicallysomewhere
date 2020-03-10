@@ -38,7 +38,7 @@ html {
 }
 section {
     border-radius: 25px;
-    margin-top: 10px;
+    margin-bottom: 15px;
 }
 .left {
     float: left;
@@ -57,8 +57,5 @@ section {
     padding-bottom: 3px;
 }
 div {
-    margin: 3px;
-}
-div + div {
-    margin-top: 10px;
+    margin: auto 0;
 }
