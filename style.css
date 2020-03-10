@@ -36,3 +36,6 @@ html {
     width: 33%;
     margin: auto;
 }
+section {
+    border-radius: 25px;
+}
