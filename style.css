@@ -5,7 +5,6 @@ p {
 }
 h2 {
     text-align: center;
-    text-shadow: 2px 2px #B7B7B7;
 }
 .button {
     align-self: center;
@@ -18,11 +17,9 @@ h2 {
 }
 h1 {
     text-align: center;
-    text-shadow: 2px 2px #B7B7B7;
 }
 h3 {
     text-align: center;
-    text-shadow: 2px 2px #B7B7B7;
 }
 body {
     width: 80%;
