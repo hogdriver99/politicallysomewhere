@@ -13,7 +13,17 @@ var issueFixes = [[
     ["I disagree with the use of the word society", "I would rather it say humanity", "I would rather it say my country",
         "I would rather it say the world", "I would rather it say something else", "I don't know what I would replace it with"],
     ["Society should follow a non-religiously based morality"],
-    ["Society should not be bound by a moral code"]
+    ["Society should not be bound by a moral code"],
+    ["I have another issue with this problem"]
+],[
+    ["Free will and determinism/predestination are not mutually exclusive"],
+    ["I don not believe we have a 'will'"],
+    ["I have another issue with this problem"]
+],[
+    ["I disagree with how vague the word technology is"],
+    ["I disagree with the use of the word society", "I would rather it say humanity", "I would rather it say my country",
+        "I would rather it say the world", "I would rather it say something else", "I don't know what I would replace it with"],
+    ["I have another issue with this problem"]
 ]];
 
 var followUps = []

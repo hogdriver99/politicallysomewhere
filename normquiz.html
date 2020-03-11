@@ -13,6 +13,7 @@
     <button class="button" onclick="nextquestion(0)">Neutral</button>
     <button class="button" onclick="nextquestion(-1)">Slightly Disagree</button>
     <button class="button" onclick="nextquestion(-2)">Strongly Disagree</button>
+    <button class="button" onclick="raiseissue()" id="issue">I have a problem with this question</button>
     </p>
 
     <script>
@@ -23,6 +24,9 @@
 
         function initq() {
             document.getElementById("question-text").innerHTML = questionbank[currq].question;
+            if (questionbank[currq].hasissue == false) {
+                document.getElementById("issue").style.display = 'none';
+            }
         }
 
         function nextquestion(val) {
@@ -38,6 +42,12 @@
         function results() {
             location.href="results.html";
         }
+
+        function raiseissue() {
+            var temp = hasProblemList.indexOf(currq);
+            sessionStorage.setItem("currQ", currq);
+            let issuewin = window.open('issueraised.html', 'Issue', 'width=800,height=300');
+        }   
     </script>
 </body>
 </html>

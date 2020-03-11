@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Politically Somewhere Question Issue</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <button class="button" onclick="selection(0)" id="0" style="display: none"></button>
+    <button class="button" onclick="selection(1)" id="1" style="display: none"></button>
+    <button class="button" onclick="selection(2)" id="2" style="display: none"></button>
+    <button class="button" onclick="selection(3)" id="3" style="display: none"></button>
+    <script src="questionbank.js"></script>
+    <script>
+        var q = sessionStorage.getItem("currQ");
+        init(q);
+
+        function init(q) {
+            var sols = issueFixes[q];
+            var i = 0;
+            for (item in sols) {
+                document.getElementById(i).style.display = "block";
+                document.getElementById(i).innerText = sols[i][0];
+                i++;
+            }
+        }
+
+        function selection(val) {
+            continue;
+        }
+    </script>
+</body>
+</html>
