@@ -5,6 +5,37 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <p>Under Construction</p>
+    <script src="questionbank.js"></script>
+    <p id="question-text"></p>
+    <button class="button" onclick="nextquestion(2)">Strongly Agree</button>
+    <button class="button" onclick="nextquestion(1)">Slightly Agree</button>
+    <button class="button" onclick="nextquestion(0)">Neutral</button>
+    <button class="button" onclick="nextquestion(-1)">Slightly Disagree</button>
+    <button class="button" onclick="nextquestion(-2)">Strongly Disagree</button>
+
+    <script>
+
+        var currq = 0
+
+        initq();
+
+        function initq() {
+            document.getElementById("question-text").innerHTML = questionbank[currq].question;
+        }
+
+        function nextquestion(val) {
+            // currently does not track values
+            currq++;
+            if (currq < questionbank.length) {
+                initq();
+            } else {
+                results();
+            }
+        }
+
+        function results() {
+            location.href="results.html";
+        }
+    </script>
 </body>
 </html>
