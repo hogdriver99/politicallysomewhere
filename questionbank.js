@@ -1,9 +1,9 @@
 var questionbank = [];
-var rawquestions = ["It is important that society follows a religiously based morality",
-                "We have free will",
-                "Morality is objective",
-                "Following a moral code is important to me",
-                "Technological progress is generally good for society"];
+var rawquestions = [["It is important that society follows a religiously based morality", 2],
+                ["We have free will", 27],
+                ["Morality is objective", 9],
+                ["Following a moral code is important to me", 9],
+                ["Technological progress is generally good for society", 19]];
 
 var hasProblemList = [0, 1, 4];
 
@@ -30,11 +30,12 @@ var followUps = []
 
 for (let i = 0; i < rawquestions.length; i++) {
     questionbank[i] = {
-        question: rawquestions[i],
+        question: rawquestions[i][0],
         hasIssue: false,
         hasFollowUp: false,
         issuefixes: [],
-        followUpAddr: -1
+        followUpAddr: -1,
+        category: rawquestions[i][1]
     };
     if (hasProblemList.includes(i)) {
         questionbank[i].hasIssue = true;

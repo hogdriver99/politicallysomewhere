@@ -21,19 +21,20 @@
 
     <script>
 
-        var currq = 0
+        var currq = 0;
+        var scores = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
         initq();
 
         function initq() {
             document.getElementById("question-text").innerHTML = questionbank[currq].question;
-            if (questionbank[currq].hasissue == false) {
+            if (questionbank[currq].hasIssue == false) {
                 document.getElementById("issue").style.display = 'none';
             }
         }
 
         function nextquestion(val) {
-            // currently does not track values
+            scores[questionbank[currq].category] += val;
             currq++;
             if (currq < questionbank.length) {
                 initq();
